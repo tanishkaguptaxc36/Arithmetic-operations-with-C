@@ -1,52 +1,29 @@
-# Prerequisites
-*.d
-
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+#include<stdio.h>
+int main()
+{
+    int a;float b;int n;
+    printf("Enter the value of a :");
+    scanf("%d",&a);
+    printf("Enter the value of b :");
+    scanf("%f",&b);
+    printf("1 --> addition\n2 --> subtraction\n3 --> Multiplication\n4 --> Division\n");
+    scanf("%d",&n);
+    switch(n){
+        case 1:
+            printf("The sum of a and b is %f",a+b);
+            break;
+        case 2:
+            printf("The sum of a and b is %f",a-b);
+            break;
+        case 3:
+            printf("The sum of a and b is %f",a*b);
+            break;
+        case 4:
+            printf("The sum of a and b is %f",a/b);
+            break;
+        default:
+            printf("You entered an Invalid number!!!");
+            break;
+        
+    }
+}
